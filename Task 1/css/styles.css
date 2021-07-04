@@ -172,6 +172,125 @@ nav ul li a{
     color: #fff;
 }
 #map {
-    height: 450px;
-    width: 600px;
+    height: 350px;
+    width: 500px;
+    margin-right: 40px;
   }
+.contact{
+    margin-top: 4em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_container{
+    justify-content: center;
+}
+.section_title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+.contact_content{
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+}
+.contact_label{
+    font-size: 0.75rem;
+    color: #fff;
+}
+.contact_input{
+    width: 100%;
+    background-color: hsl(230, 70%, 96%);
+    color: #000;
+    font-size: 0.938rem;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+}
+.send{
+    margin-left: 50px;
+}
+.newsletter{
+    margin-top: 4em;
+}
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news_input{
+    width: 50%;
+    height: 50px;
+    background-color: hsl(230, 70%, 96%);
+    color: #000;
+    font-size: 0.938rem;
+    border: none;
+    outline: none;
+    margin-right: 15px;
+}
+.life{
+    margin-top: 4em;
+}
+.team{
+    margin-top: 4em;
+}
+.team_title{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.team_subtitle{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.profile{
+    margin-top: 25px;
+}
+.profile .team_image{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.team_image:after{
+    content: '';
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.team_image ul{
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+}
+.team_image ul li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 7px;
+    display: inline-block;
+}
+.team_image a{
+    color: #fff;
+}
+.team_image:hover:after{
+    opacity: 1;
+}
+.team_image:hover ul{
+    opacity: 1;
+}
