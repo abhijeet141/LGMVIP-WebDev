@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #111;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 300px;
+    z-index: 10000;
+}
+.logo{
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+nav ul{
+    position: relative;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #000;
+}
+.slider .imageslide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    clip-path: circle(0px at center);
+}
+.slider input[type="radio"]:checked + .imageslide {
+    z-index: 10;
+    clip-path: circle(1000px at center);
+}
+.slider .imageslide img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .imageslide .content{
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+}
+.heading{
+    font-size: 3em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.smallheading{
+    color: #fff;
+}
+.slider input[type="radio"]{
+    position: relative;
+    z-index: 1000;
+    margin: 5px;
+    margin-bottom: 35px;
+    outline: none;
+    cursor: pointer;
+}
+#welcome{
+    text-align: center;
+    margin-top: 4em;
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    width: 80em;
+    grid-gap: 6em;
+    align-items: start;
+    margin-top: 4em;
+}
+.card{
+    border-radius: 0.4rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cardimage{
+    height: 20rem;
+    object-fit: cover;
+}
+#pricing {
+    padding: 100px;
+  }
+.projects{
+    margin-top: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: #fff;
+}
+.projects img{
+    width: 400px;
+    border-radius: 0.5rem;
+    justify-self: center;
+}
+.blog{
+    text-align: center;
+    margin-top: 4em;
+}
+.footer{
+    padding-top: 2rem;
+}
+
+.footer_container{
+    row-gap: 3.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.footercontainer{
+    background-color: #000;
+    padding: 3rem 0 3.5rem;
+}
+
+.footer_title{
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.footer_subtitle{
+     font-size: 0.813rem;
+}
+.footer_social{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}
+.footer_social:hover{
+    color: hsl(230, 92%, 85%);
+}
+
+.footer_title,.footer_subtitle,.footer_links,.footer_social{
+    color: #fff;
+}
+#map {
+    height: 450px;
+    width: 600px;
+  }
